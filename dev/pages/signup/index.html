@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Responsive website template for products</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+
+    @@include('styles.html')
+
+</head> 
+
+<body class="signup-page access-page has-full-screen-bg">
+    <div class="upper-wrapper">
+        
+        @@include('nav.html')       
+        
+        <!-- ******Signup Section****** --> 
+        <section class="signup-section access-section section">
+            <div class="container">
+                <div class="row">
+                    <div class="form-box col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-sm-offset-0 xs-offset-0">     
+                        <div class="form-box-inner">
+                            <h2 class="title text-center">Sign up now</h2>  
+                            <p class="intro text-center">It only takes 3 minutes!</p>               
+                            <div class="row">
+                                <div class="form-container col-md-5 col-sm-12 col-xs-12">
+                                    <form class="signup-form">                
+                                        <div class="form-group email">
+                                            <label class="sr-only" for="signup-email">Your email</label>
+                                            <input id="signup-email" type="email" class="form-control login-email" placeholder="Your email">
+                                        </div><!--//form-group-->
+                                        <div class="form-group password">
+                                            <label class="sr-only" for="signup-password">Your password</label>
+                                            <input id="signup-password" type="password" class="form-control login-password" placeholder="Password">
+                                        </div><!--//form-group-->
+                                        <button type="submit" class="btn btn-block btn-cta-primary">Sign up</button>
+                                        <p class="note">By signing up, you agree to our terms of services and privacy policy.</p>
+                                        <p class="lead">Already have an account? <a class="login-link" id="login-link" href="login.html">Log in</a></p>  
+                                    </form>
+                                </div><!--//form-container-->
+                                <div class="social-btns col-md-5 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-sm-offset-0">  
+                                    <div class="divider"><span>Or</span></div>                      
+                                    <ul class="list-unstyled social-login">
+                                        <li><button class="twitter-btn btn" type="button"><i class="fa fa-twitter"></i>Sign up with Twitter</button></li>
+                                        <li><button class="facebook-btn btn" type="button"><i class="fa fa-facebook"></i>Sign up with Facebook</button></li>
+                                        <li><button class="github-btn btn" type="button"><i class="fa fa-github-alt"></i>Sign up with Github</button></li>
+                                        <li><button class="google-btn btn" type="button"><i class="fa fa-google-plus"></i>Sign up with Google</button></li>
+                                    </ul>
+                                    <p class="note">Don't worry, we won't post anything without your permission.</p>
+                                </div><!--//social-login-->
+                            </div><!--//row-->
+                        </div><!--//form-box-inner-->
+                    </div><!--//form-box-->
+                </div><!--//row-->
+            </div><!--//container-->
+        </section><!--//signup-section-->
+    </div><!--//upper-wrapper-->
+    
+    @@include('footer.html')
+
+    @@include('scripts.html')
+    
+            
+</body>
+</html> 
+
