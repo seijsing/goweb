@@ -4,11 +4,16 @@
  *
  * ----------------------------------------------------------------------------------
  */
+/* ======= Helpers ======= */
+.bg-grey {
+  background-color: #f5f5f5;
+}
 /* ======= Base ======= */
 body {
   font-family: 'Roboto', arial, sans-serif;
   color: #444444;
   font-size: 16px;
+  font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -819,6 +824,40 @@ select {
   -moz-opacity: 1;
   opacity: 1;
 }
+/* ======= Tour promo ======= */
+.tour-promo {
+  padding: 80px 0;
+  padding-top: 220px;
+  position: relative;
+  z-index: 10;
+}
+.tour-promo .title {
+  font-size: 50px;
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+.tour-promo .intro {
+  color: #fff;
+  margin-bottom: 80px;
+}
+/* ======= Tour centered content ======= */
+.tour-center {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.tour-center .title {
+  font-size: 36px;
+  font-weight: 300;
+  margin-top: 0;
+}
+.tour-center .intro {
+  color: #999999;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
 /* ======= Features video ======= */
 .features-video {
   padding-top: 170px;
@@ -1213,8 +1252,8 @@ select {
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  color: #fff;
-  background-color: #767676;
+  color: #444444;
+  background-color: #ffe199;
   -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
   -moz-transform: rotate(45deg) translate3d(0, 0, 0);
   -ms-transform: rotate(45deg) translate3d(0, 0, 0);
@@ -1225,7 +1264,7 @@ select {
   content: '';
   position: absolute;
   bottom: -5px;
-  border-top: 5px solid #363636;
+  border-top: 5px solid #ffbc1a;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
 }

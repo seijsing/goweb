@@ -1,8 +1,15 @@
+/* ======= Helpers ======= */
+
+.bg-grey {
+  background-color: @smoky-white;
+}
+
 /* ======= Base ======= */
 body {
     font-family: 'Roboto', arial, sans-serif;
     color: @text-color;
     font-size: 16px;
+    font-weight: 300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -772,6 +779,43 @@ select {
     }
 }
 
+/* ======= Tour promo ======= */
+.tour-promo {
+    padding: 80px 0;
+    padding-top: 220px;
+    position: relative;
+    z-index: 10;
+
+    .title {
+        font-size: 50px;
+        font-weight: 100;
+        margin-top: 0;
+        margin-bottom: 30px;
+        color: #fff;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    }
+    .intro {
+        color: #fff;
+        margin-bottom: 80px;
+    }
+  }
+
+/* ======= Tour centered content ======= */
+.tour-center {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .title {
+        font-size: 36px;
+        font-weight: 300;
+        margin-top: 0;
+    }
+    .intro {
+        color: @grey;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+  }
+
 /* ======= Features video ======= */
 .features-video {
     padding-top: 170px;
@@ -1107,14 +1151,14 @@ select {
                 font-weight: bold;
                 text-align: center;
                 text-transform: uppercase;
-                color: #fff;
-                background-color: lighten(@color-2, 30%);
+                color: @text-color;
+                background-color: lighten(@color, 30%);
                 .transform (rotate(45deg) translate3d(0,0,0));
                 &:before, &:after {
                     content: '';
                     position: absolute;
                     bottom: -5px;
-                    border-top: 5px solid lighten(@color-2, 5%);
+                    border-top: 5px solid lighten(@color, 5%);
                     border-left: 5px solid transparent;
                     border-right: 5px solid transparent;
                 }
